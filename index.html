@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar-nav" tabindex="0">
+    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow">
+        <div class="container">
+            <img class="navbar-brand logo-image" src="images/logo.png" alt="school-logo">
+            <button class="d-block bg-white border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" 
+                data-bs-target="#navbarContent" aria-controls="navbarSupportedContent">
+                <svg class="menu" width="25" height="25" viewBox="0 0 48 32" fill="none" 
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 
+                                    5.33333H24V0H48V5.33333Z" fill="#666D83" />
+                </svg>
+            </button>
+            <ul class="navbar-nav d-none d-lg-flex">
+                <li class="nav-item"><a class="nav-link nav-content" href="#landingPage">Home</a></li>
+                <li class="nav-item"><a class="nav-link nav-content" href="#aboutUs">About Us</a></li>
+                <li class="nav-item"><a class="nav-link nav-content" href="#whyChooseUs">Why Choose Us</a></li>
+                <li class="nav-item"><a class="nav-link nav-content" href="#facilities">Facilities</a></li>
+                <li class="nav-item"><a class="nav-link nav-content" href="#contactUs">Contact Us</a></li>
+            </ul>
+            <button class="d-none d-lg-block btn btn-primary text-white fw-bold">Apply Now</button>
+            <div class="offcanvas offcanvas-end d-flex d-lg-none" id="navbarContent" data-bs-scroll="true">
+                <div class="offcanvas-header justify-content-end pt-4 pe-5">
+                    <img src="images/ci_close-big.svg" alt="close btn" data-bs-dismiss="offcanvas">
+                </div>
+                <div class="offcanvas-body d-flex flex-column align-items-center">
+                    <ul class="navbar-nav gap-4">
+                        <li class="nav-item"><a class="nav-link nav-content py-0 active" href="#landingPage">Home</a></li>
+                        <li class="nav-item"><a class="nav-link nav-content py-0" href="#aboutUs">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link nav-content py-0" href="#whyChooseUs">Why Choose Us</a></li>
+                        <li class="nav-item"><a class="nav-link nav-content py-0" href="#facilities">Facilities</a></li>
+                        <li class="nav-item"><a class="nav-link nav-content py-0" href="#contactUs">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+    </nav>
+    
+    <main>
+        <section id="landingPage" class="container d-flex flex-column-reverse flex-md-row
+            justify-content-center align-items-center gap-4 gap-md-5">
+            <div class="hero-content d-flex align-items-center align-items-md-start flex-column gap-3 col-md-6 col-lg-5">
+                <h1 class="fw-bolder mb-0 text-center text-md-start">Give Your Child The Education They Deserve</h1>
+                <p class="mb-0 col-lg-10 text-center text-md-start">
+                    At EL-Leonora College you will learn to discover new knowledge,
+                    friends and real life experiments throughout your journey.
+                </p>
+                <div>
+                    <button class="btn btn-primary text-white fw-bold">Apply Now</button>
+                </div>
+            </div>
+            <div class="hero-img col-8 col-md-5">
+                <img class="img-fluid" src="images/hero-img.png" alt="hero-img">
+            </div>
+        </section>
+
+        <section id="aboutUs" class="coloured-section d-flex flex-column gap-4 gap-md-5">
+            <h3 class="fw-bold text-center mb-0">Welcome</h3>
+            <div class="container d-flex flex-column flex-md-row gap-4 gap-md-5 
+                justify-content-center align-items-center">
+                <div class="about-us_img col-6 col-md-4 col-lg-3">
+                    <img class="img-fluid" src="images/Ellipse 1.png" alt="">
+                </div>
+                <div class="about-us_content d-flex flex-column gap-3 col-lg-7">
+                    <p class="mb-0">EL-Leonora College was founded on the 5th of October 1999, with the 
+                        secondary school(College) starting with 23 students.
+                    </p>
+                    <p class="mb-0">At EL-Leonora College our mission is to provide quality education
+                        to as many children as possible to make them greater and responsible citizen
+                        for Nigeria in future.</p>
+                    <p class="mb-0">our aim is to provide the best academic program
+                        and learning environment possible for the social, emotional, and
+                        physical intellectual development of each child.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="whyChooseUs" class="container benefit-section d-flex flex-column gap-4 gap-md-5">
+            <h3 class="fw-bold text-center mb-0">Why Choose Us</h3>
+            <div class="overall-wrapper d-flex flex-column gap-3">
+                <div class="benefit-wrapper1 d-flex flex-column flex-md-row justify-content-center gap-3 gap-md-5">
+                    <div class="d-flex gap-2 col-md-5">
+                        <div>
+                            <img src="images/mdi_academic-cap.svg" alt="" class="benefit-img">
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                            <h5 class="mb-0">Academic Excellence</h5>
+                            <p class="mb-0">
+                                We boast of a track record of excellence through our midterm assessment
+                                test for the students.
+                            </p>
+                        </div>
+                    </div>
+                   
+                    <div class="d-flex gap-2 col-md-5">
+                        <div>
+                            <img src="images/ph_chalkboard-teacher-light.svg" alt="" class="benefit-img">
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                            <h5 class="mb-0">Well Trained Professionals</h5>
+                            <p class="mb-0">Our educators are experienced and are well trained in their
+                                area of expertise.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="benefit-wrapper2 d-flex flex-column flex-md-row justify-content-center gap-3 gap-md-5">
+                    <div class="d-flex gap-2 col-md-5">
+                        <div>
+                            <img src="images/mdi_people-switch.svg" alt="" class="benefit-img">
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                            <h5 class="mb-0">Parents-Teachers Coordination</h5>
+                            <p class="mb-0">
+                                We make sure carry the parents of our pupil's along by creating a date
+                                for the parent to come and access their child's academic performance.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex gap-2 col-md-5">
+                        <div>
+                            <img src="images/ph_soccer-ball-duotone.svg" alt="" class="benefit-img">
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                            <h5 class="mb-0">Extracurricular Activities</h5>
+                            <p class="mb-0">At EL-Leonora College we ensure that our student's partake in various
+                                school extension activities to help them maintain a healthy life style.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="facilities" class="container facilities-section d-flex flex-column gap-3 gap-md-4 position-relative">
+            <div class="facilites-content d-flex flex-column gap-4 gap-md-5">
+                <h3 class="fw-bold text-center mb-0">Facilities</h3>
+                <p class="mb-0 text-center col-lg-6 mx-auto">
+                    we take cognizance of the need for good facilities in the teaching and learnig process.
+                    Thereby providing them is a priority for us.
+                </p>
+            </div>
+           
+            <div class="facilities-wrapper d-flex flex-column flex-md-row gap-3
+                justify-content-start justify-content-lg-center align-items-center">
+                <img class="position-absolute img-fluid facilities-img" src="images/grid-layout_img.svg" alt="">
+                <div class="list-wrapper d-flex flex-column gap-3 col-lg-8">
+                    <div class="d-flex align-items-center gap-1">
+                        <img class="check-icon" src="images/material-symbols_check-circle.svg" alt="">
+                        <p class="mb-0">ICT Room</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-1">
+                        <img class="check-icon" src="images/material-symbols_check-circle.svg" alt="">
+                        <p class="mb-0">Sport Facilities</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-1">
+                        <img class="check-icon" src="images/material-symbols_check-circle.svg" alt="">
+                        <p class="mb-0">Safe and Secure Environment</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-1">
+                        <img class="check-icon" src="images/material-symbols_check-circle.svg" alt="">
+                        <p class="mb-0">Well Furnished Labs and Library</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-1">
+                        <img class="check-icon" src="images/material-symbols_check-circle.svg" alt="">
+                        <p class="mb-0">Conducive Environment For Learning</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="ctaSection" class="coloured-section cta-section position-relative">
+            <div class="container d-flex cta-wrapper gap-5 justify-content-center align-items-center">
+                <h6 class="mb-0 fw-bolder">Enroll Your Child or Children Now!!!</h6>
+                <div>
+                    <button class="btn btn-primary text-white fw-bold">Register Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contactUs" class="footer-section">
+        <div class="d-flex flex-column align-items-center gap-5">
+            <div class="contact-wrapper d-flex flex-column flex-lg-row justify-content-center gap-3 gap-lg-5">
+                <div class="d-flex flex-column flex-md-row gap-3 gap-md-5">
+                    <div class="primary-address d-flex flex-column gap-2">
+                        <div class="d-flex flex-column gap-1">
+                            <img class="footer-img" src="images/material-symbols_location-on-outline.svg" alt="">
+                            <p class="text-white mb-0 fw-bold">Primary School :</p>
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                            <p class="mb-0 text-white">18 Akpiri Street, Off Coconut B/Stop<br>Olodi Apapa, Lagos.</p>
+                            <a class="text-decoration-none text-white" href="Mailto: leonoraschools4u@yahoo.com">
+                                leonoraschools4u@Yahoo.com
+                            </a>
+                            <div class="d-flex flex-column">
+                                <a class="text-decoration-none text-white" href="tel: +2348023144271">08023144271,</a>
+                                <a class="text-decoration-none text-white" href="tel: +2348027380300">08027380300</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="secondary-address d-flex flex-column gap-2">
+                        <div class="d-flex flex-column gap-1">
+                            <img class="footer-img" src="images/material-symbols_location-on-outline.svg" alt="">
+                            <p class="text-white mb-0 fw-bold">Secondary School :</p>
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                            <p class="mb-0 text-white">104 Muyibi Street, Off Wilmer B/Stop<br>Olodi Apapa, Lagos.</p>
+                            <a class="text-decoration-none text-white" href="Mailto: leonoraschools4u@yahoo.com">
+                                leonoraschools4u@Yahoo.com
+                            </a>
+                            <div class="d-flex flex-column">
+                                <a class="text-decoration-none text-white" href="tel: +2348023144271">08023144271,</a>
+                                <a class="text-decoration-none text-white" href="tel: +2348027380300">08027380300</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="working-hours d-flex flex-column gap-2">
+                    <div class="d-flex flex-column gap-1">
+                        <img class="footer-img" src="images/material-symbols_nest-clock-farsight-analog-outline.svg" alt="">
+                        <p class="text-white mb-0 fw-bold">Working Hours :</p>
+                    </div>
+                    <p class="mb-0 text-white">Mon - Fri : 8.00am - 4.00pm</p>
+                </div>
+            </div>
+            <p class="mb-0 text-white">&copy; copyright. All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>

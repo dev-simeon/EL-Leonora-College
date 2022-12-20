@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@400;600;700;800&display=swap');
+
+:root{
+    --text-color: #666D83;
+    --bg-grey: #E8EAF5;
+    --bg-accent: #253EEF;
+    --bg-accent-2: #0756CF;
+    --bg-primary: #FFFFFF;
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 95px;
+}
+
+body{
+    font-family: 'Patrick Hand';
+    color: var(--text-color);
+    background-color: var(--bg-primary);
+}
+
+section{
+    padding-top: 3.75rem;
+    padding-bottom: 6.25rem;
+}
+
+.coloured-section{
+    background-color: var(--bg-grey);
+}
+
+.nav-link.nav-content{
+    color: var(--text-color);
+}
+
+.nav-link.nav-content.active,
+.nav-link.nav-content:hover,
+.nav-link.nav-content:active{
+    color: var(--bg-accent-2);
+    font-weight: bold;
+}
+
+.offcanvas{
+    background-color: var(--bg-grey);
+}
+
+p, a{
+    font-family: 'Poppins';
+}
+
+h1{
+    font-size: 3.125rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h5{
+    font-size: 1.75rem;
+    color: var(--bg-accent-2);
+}
+
+h6{
+    font-size: 2.5rem;
+    width: 20%;
+}
+
+.benefit-section{
+    padding-bottom: 3.125rem;
+}
+
+.benefit-img{
+    width: 40px;
+}
+
+.facilities-section{
+    padding-top: 3.125rem;
+}
+
+.facilities-img{
+    right: 16rem;
+    top: 13rem;
+    z-index: 100;
+}
+
+.cta-section {
+    padding-top: 3.75rem;
+    padding-bottom: 5rem;
+}
+
+.cta-section::before{
+    content: '';
+    height: 75px;
+    background-color: var(--bg-grey);
+    position: absolute;
+    top: -37px;
+    right: 0;
+    left: 0;
+    transform: skewY(-3deg);
+}
+
+.footer-section{
+    background-color: var(--bg-accent);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.footer-img{
+    width: 30px;
+}
+
+
+/*********************************************     Mobile Design    ********************************************/
+
+@media screen and (max-width: 1399px) {
+    .facilities-img {
+        right: 10rem;
+        top: 13rem;
+    }
+    
+    h6{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .facilities-img {
+        right: 2rem;
+        top: 14rem;
+    }
+
+    h6{
+        width: 29%;
+    }
+}
+
+@media screen and (max-width: 991px){
+    body::before{
+        height: 73px;
+    }
+    
+    .logo-image{
+        width: 60px;
+    }
+    
+    .offcanvas.offcanvas-end{
+        width: 40%;
+    }
+    
+    h1{
+        font-size: 2.375rem;
+    }
+
+    h3{
+        font-size: 1.75rem;
+    }
+
+    h5{
+        font-size: 1.25rem;
+    }
+
+    h6{
+        font-size: 36px;
+        width: 35%;
+    }
+
+    .benefit-img {
+        width: 20px;
+    }
+
+    .facilities-img {
+        width: 300px;
+        right: 3rem;
+        top: 15rem;
+    }
+
+    .cta-section::before{
+        height: 55px;
+        top: -30px;
+    }
+
+    .cta-section{
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .offcanvas.offcanvas-end{
+        width: 50%;
+    }
+
+    .benefit-section{
+        padding-bottom: 2rem;
+    }
+
+    .facilities-section{
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    .facilities-img{
+        width: 250px;
+        position: static !important;
+    }
+
+    .cta-section {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h6{
+        font-size: 32px;
+        width: 43%;
+    }
+
+    .check-icon{
+        width: 20px;
+    }
+
+    .cta-section::before {
+        height: 30px;
+        top: -1rem;
+        transform: skewY(-2deg);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    h3{
+        font-size: 1.5rem;
+    }
+
+    h6{
+        font-size: 1.75rem;
+        width: 35%
+    }
+
+    .logo-image {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 541px) {
+    h6{
+        text-align: center;
+        width: 100%;
+    }
+
+    .cta-wrapper{
+        flex-direction: column;
+        gap: 1.25rem !important;
+    }
+}
