@@ -264,3 +264,9 @@ h6{
         gap: 1.25rem !important;
     }
 }
+
+@media screen and (max-width: 470px) {
+    .offcanvas.offcanvas-end{
+        width: 80%;
+    }
+}
