@@ -64,7 +64,7 @@ h3{
 }
 
 h5{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--bg-accent-2);
 }
 
@@ -160,10 +160,6 @@ h6{
         font-size: 1.75rem;
     }
 
-    h5{
-        font-size: 1.25rem;
-    }
-
     h6{
         font-size: 36px;
         width: 35%;
@@ -202,6 +198,8 @@ h6{
     }
 
     .benefit-section{
+        padding-left: 12px;
+        padding-right: 12px;
         padding-bottom: 2rem;
     }
 
