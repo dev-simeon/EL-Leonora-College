@@ -2,7 +2,7 @@
 
 :root{
     --text-color: #666D83;
-    --bg-grey: #E8EAF5;
+    --bg-grey: #f8f8fa;
     --bg-accent: #253EEF;
     --bg-accent-2: #0756CF;
     --bg-primary: #FFFFFF;
@@ -11,11 +11,11 @@
 body::before {
     display: block;
     content: '';
-    height: 95px;
+    height: 73px;
 }
 
 body{
-    font-family: 'Patrick Hand';
+    font-family: 'Poppins';
     color: var(--text-color);
     background-color: var(--bg-primary);
 }
@@ -27,6 +27,11 @@ section{
 
 .coloured-section{
     background-color: var(--bg-grey);
+}
+
+.logo-image{
+    width: 50px;
+    height: 50px;
 }
 
 .nav-link.nav-content{
@@ -49,19 +54,22 @@ p, a{
 }
 
 h1{
+    font-family: 'Patrick Hand';
     font-size: 3.125rem;
 }
 
 h3{
+    font-family: 'Patrick Hand';
     font-size: 2rem;
 }
 
 h5{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: var(--bg-accent-2);
 }
 
 h6{
+    font-family: 'Patrick Hand';
     font-size: 2.5rem;
     width: 20%;
 }
@@ -137,11 +145,7 @@ h6{
 
 @media screen and (max-width: 991px){
     body::before{
-        height: 73px;
-    }
-    
-    .logo-image{
-        width: 60px;
+        height: 80px;
     }
     
     .offcanvas.offcanvas-end{
