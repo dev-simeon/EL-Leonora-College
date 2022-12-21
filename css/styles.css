@@ -74,6 +74,11 @@ h6{
     width: 20%;
 }
 
+.span{
+    font-size: 65px;
+    line-height: 60px;
+}
+
 .benefit-section{
     padding-bottom: 3.125rem;
 }
@@ -165,6 +170,11 @@ h6{
         width: 35%;
     }
 
+    .span{
+        font-size: 50px;
+        line-height: 54px;
+    }
+
     .about-us-img{
         width: 200px;
         height: 200px;
@@ -188,9 +198,17 @@ h6{
 }
 
 @media screen and (max-width: 767px) {
+    body::before{
+        height: 70px;
+    }
+    
     section{
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
+    }
+
+    .span{
+        line-height: 60px;
     }
 
     .offcanvas.offcanvas-end{
