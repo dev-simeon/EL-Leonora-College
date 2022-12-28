@@ -96,12 +96,7 @@ h6{
     z-index: 100;
 }
 
-.cta-section {
-    padding-top: 3.75rem;
-    padding-bottom: 5rem;
-}
-
-.cta-section::before{
+.cta-section::before {
     content: '';
     height: 75px;
     background-color: var(--bg-grey);
@@ -110,6 +105,21 @@ h6{
     right: 0;
     left: 0;
     transform: skewY(-3deg);
+}
+
+.cta-section {
+    padding-top: 3.75rem;
+    padding-bottom: 5rem;
+}
+
+.btn.cta-btn{
+    background-color: var(--bg-accent);
+}
+
+.btn.cta-btn:hover,
+.btn.cta-btn:active{
+    background-color: var(--bg-accent);
+    opacity: 0.7;
 }
 
 .footer-section{
@@ -226,7 +236,7 @@ h6{
     }
 
     .facilities-img{
-        width: 200px;
+        width: 250px;
         position: static !important;
     }
 
