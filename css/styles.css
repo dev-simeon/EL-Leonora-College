@@ -3,15 +3,9 @@
 :root{
     --text-color: #666D83;
     --bg-grey: #f8f8fa;
-    --bg-accent: #253EEF;
+    --bg-accent: #01032c;
     --bg-accent-2: #0756CF;
     --bg-primary: #FFFFFF;
-}
-
-body::before {
-    display: block;
-    content: '';
-    height: 73px;
 }
 
 body{
@@ -25,6 +19,15 @@ section{
     padding-bottom: 6.25rem;
 }
 
+#hero-page{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)), url(../images/DSC_0680-1.JPG);
+    height: calc(100vh - 150px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .coloured-section{
     background-color: var(--bg-grey);
 }
@@ -34,13 +37,17 @@ section{
     height: 50px;
 }
 
+a.nav-link{
+    color: var(--bg-primary);
+}
+
 .nav-link.nav-content{
     color: var(--text-color);
 }
 
-.nav-link.nav-content.active,
+.navbar-nav .nav-link.active,
 .nav-link.nav-content:hover,
-.nav-link.nav-content:active{
+a.nav-link:hover{
     color: var(--bg-accent-2);
     font-weight: bold;
 }
@@ -58,7 +65,7 @@ h1{
 }
 
 h3{
-    font-family: 'Patrick Hand';
+    color: var(--bg-accent);
     font-size: 2rem;
 }
 
@@ -78,22 +85,50 @@ h6{
     line-height: 60px;
 }
 
-.benefit-section{
-    padding-bottom: 3.125rem;
+.blob{
+    background-color: var(--bg-accent);
+    width: 300px;
+    height: 450px;
+}
+
+#aboutUs{
+    gap: 180px;
+}
+
+.about-us-img{
+    width: 250px;
+    position: absolute;
+    left: 90px;
+    top: 109px;
+}
+
+.about-us-content{
+    width: 530px;
+}
+
+.benefit-card{
+    width: 420px;
+    background-color: white;
+    padding: 32px 19.2px;
+    border-radius: 20px;
 }
 
 .benefit-img{
     width: 32px;
 }
 
-.facilities-section{
-    padding-top: 3.125rem;
+#facilities{
+    padding-bottom: 162px;
+}
+
+.facilities-wrapper{
+    justify-content: center;
 }
 
 .facilities-img{
-    right: 16rem;
-    top: 13rem;
-    z-index: 100;
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
 }
 
 .cta-section::before {
@@ -113,17 +148,17 @@ h6{
 }
 
 .btn.cta-btn{
-    background-color: var(--bg-accent);
+    background-color: var(--bg-accent-2);
 }
 
 .btn.cta-btn:hover,
 .btn.cta-btn:active{
-    background-color: var(--bg-accent);
+    background-color: var(--bg-accent-2);
     opacity: 0.7;
 }
 
 .footer-section{
-    background-color: var(--bg-accent);
+    background-color: var(--bg-accent-2);
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
@@ -133,31 +168,67 @@ h6{
 }
 
 
-/*********************************************     Mobile Design    ********************************************/
+/******************************    Mobile Design    *********************************/
 
 @media screen and (max-width: 1399px) {
-    .facilities-img {
-        right: 10rem;
-        top: 13rem;
-    }
-    
     h6{
         width: 25%;
+    }
+
+    .facilities-wrapper {
+        width: 1000px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .about-us-img{
+        top: 116px;
     }
 }
 
 @media screen and (max-width: 1199px) {
-    .facilities-img {
-        right: 2rem;
-        top: 14rem;
-    }
-
     h6{
         width: 29%;
+    }
+
+    .about-us-content {
+        width: 550px;
+    }
+
+    #aboutUs {
+        gap: 150px;
+    }
+
+    .about-us-img {
+        left: 99px;
+        top: 115px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .facilities-wrapper{
+        width: 946px;
+    }
+}
+
+@media screen and (max-width: 1049px) {
+    #aboutUs {
+        gap: 130px;
+    }
+
+    .about-us-content{
+        width: 520px;
     }
 }
 
 @media screen and (max-width: 991px){
+    .blob{
+        width: 200px;
+    }
+
     body::before{
         height: 80px;
     }
@@ -174,6 +245,10 @@ h6{
         font-size: 1.75rem;
     }
 
+    h5{
+        font-size: 18px;
+    }
+
     h6{
         font-size: 36px;
         width: 35%;
@@ -184,15 +259,28 @@ h6{
         line-height: 57px;
     }
 
-    .about-us-img{
-        width: 200px;
-        height: 200px;
+    #aboutUs {
+        gap: 150px;
     }
 
-    .facilities-img {
-        width: 300px;
-        right: 3rem;
-        top: 15rem;
+    .about-us-img{
+        width: 200px;
+        top: 132px;
+        left: 40px;
+    }
+
+
+    .benefit-card{
+        width: 390px;
+    }
+
+    .facilities-img{
+        width: 180px;
+        height: 180px;
+    }
+
+    .facilities-wrapper{
+        width: 748px;
     }
 
     .cta-section::before{
@@ -206,12 +294,49 @@ h6{
     }
 }
 
-@media screen and (max-width: 767px) {
-    body::before{
-        height: 70px;
+@media screen and (max-width: 917px) {
+    .blob {
+        width: 180px;
     }
-    
-    section{
+
+    #aboutUs{
+        gap: 120px;
+    }
+
+    .about-us-content{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .benefit-card{
+        width: 360px;
+    }
+
+    #facilities{
+        padding-bottom: 120px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .benefit-wrapper1,
+    .benefit-wrapper2
+    {
+        flex-direction: column;
+    }
+
+    .benefit-card{
+        width: 430px;
+    }
+
+    .about-us-content {
+        width: 470px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section,
+    #aboutUs{
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
     }
@@ -220,24 +345,25 @@ h6{
         font-size: 45px;
     }
 
+    .blob{
+        width: 250px;
+    }
+
+    #aboutUs{
+        gap: 30px;
+    }
+
+    .about-us-img{
+        width: 250px;
+        position: static;
+    }
+
+    .about-us-content{
+        width: 80%;
+    }
+
     .offcanvas.offcanvas-end{
         width: 50%;
-    }
-
-    .benefit-section{
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-bottom: 2rem;
-    }
-
-    .facilities-section{
-        padding-top: 2rem;
-        padding-bottom: 4rem;
-    }
-
-    .facilities-img{
-        width: 250px;
-        position: static !important;
     }
 
     .cta-section {
@@ -254,6 +380,10 @@ h6{
         width: 43%;
     }
 
+    .facilities-wrapper{
+        width: 563px;
+    }
+
     .check-icon{
         width: 23px;
     }
@@ -262,6 +392,12 @@ h6{
         height: 30px;
         top: -1rem;
         transform: skewY(-2deg);
+    }
+}
+
+@media screen and (max-width: 623px) {
+    .about-us-content{
+        width: 90%;
     }
 }
 
@@ -275,14 +411,26 @@ h6{
         width: 35%
     }
 
+    .about-us-img{
+        width: 200px;
+    }
+
     .logo-image {
         width: 50px;
+    }
+
+    .facilities-wrapper{
+        width: 386px;
     }
 }
 
 @media screen and (max-width: 541px) {
     h6{
         text-align: center;
+        width: 100%;
+    }
+
+    .about-us-content {
         width: 100%;
     }
 
@@ -304,5 +452,15 @@ h6{
     .span {
         font-size: 38px;
         line-height: 44px;
+    }
+
+    .benefit-card {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .facilities-wrapper {
+        width: 220px;
     }
 }
