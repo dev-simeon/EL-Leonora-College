@@ -23,6 +23,7 @@ section{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)), url(../images/DSC_0680-1.JPG);
     height: calc(100vh - 150px);
+    min-height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -127,8 +128,8 @@ h6{
 
 .facilities-img{
     object-fit: cover;
-    width: 230px;
-    height: 230px;
+    width: 244px;
+    height: 244px;
 }
 
 .cta-section::before {
@@ -274,11 +275,6 @@ h6{
         width: 390px;
     }
 
-    .facilities-img{
-        width: 180px;
-        height: 180px;
-    }
-
     .facilities-wrapper{
         width: 748px;
     }
@@ -305,6 +301,13 @@ h6{
 
     .about-us-content{
         width: 500px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .facilities-img{
+        width: 196px;
+        height: 196px;
     }
 }
 
@@ -362,6 +365,10 @@ h6{
         width: 80%;
     }
 
+    .facilities-wrapper{
+        width: calc(100vw - 30px);
+    }
+
     .offcanvas.offcanvas-end{
         width: 50%;
     }
@@ -378,10 +385,6 @@ h6{
     h6{
         font-size: 32px;
         width: 43%;
-    }
-
-    .facilities-wrapper{
-        width: 563px;
     }
 
     .check-icon{
@@ -418,10 +421,6 @@ h6{
     .logo-image {
         width: 50px;
     }
-
-    .facilities-wrapper{
-        width: 386px;
-    }
 }
 
 @media screen and (max-width: 541px) {
@@ -432,6 +431,10 @@ h6{
 
     .about-us-content {
         width: 100%;
+    }
+
+    .facilities-wrapper {
+        width: 100vw;
     }
 
     .cta-wrapper{
@@ -456,11 +459,5 @@ h6{
 
     .benefit-card {
         width: auto;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .facilities-wrapper {
-        width: 220px;
     }
 }
