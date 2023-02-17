@@ -421,6 +421,10 @@ h6{
     .logo-image {
         width: 50px;
     }
+
+    .facilities-wrapper {
+        width: 100vw;
+    }
 }
 
 @media screen and (max-width: 541px) {
@@ -431,10 +435,6 @@ h6{
 
     .about-us-content {
         width: 100%;
-    }
-
-    .facilities-wrapper {
-        width: 100vw;
     }
 
     .cta-wrapper{
