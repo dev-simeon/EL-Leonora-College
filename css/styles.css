@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@400;600;700;800&display=swap');
 
-:root{
+:root {
     --text-color: #666D83;
     --bg-grey: #f8f8fa;
     --bg-accent: #01032c;
@@ -8,20 +8,20 @@
     --bg-primary: #FFFFFF;
 }
 
-body{
+body {
     font-family: 'Poppins';
     color: var(--text-color);
     background-color: var(--bg-primary);
 }
 
-section{
+section {
     padding-top: 3.75rem;
     padding-bottom: 6.25rem;
 }
 
-#hero-page{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)), url(../images/DSC_0680-1.JPG);
+#hero-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url(../images/DSC_0680-1.JPG);
     height: calc(100vh - 150px);
     min-height: 23rem;
     background-repeat: no-repeat;
@@ -29,101 +29,105 @@ section{
     background-position: center;
 }
 
-.coloured-section{
+.coloured-section {
     background-color: var(--bg-grey);
 }
 
-.logo-image{
+.logo-image {
     width: 50px;
     height: 50px;
 }
 
-a.nav-link{
+a.nav-link {
     color: var(--bg-primary);
 }
 
-.nav-link.nav-content{
+.nav-link.nav-content {
     color: var(--text-color);
 }
 
 .navbar-nav .nav-link.active,
 .nav-link.nav-content:hover,
-a.nav-link:hover{
+a.nav-link:hover {
     color: var(--bg-accent-2);
     font-weight: bold;
 }
 
-.offcanvas{
+.offcanvas {
     background-color: var(--bg-grey);
 }
 
-p, a{
+p,
+a {
     font-family: 'Poppins';
 }
 
-h1{
+h1 {
     font-size: 2.375rem;
 }
 
-h3{
+h3 {
     color: var(--bg-accent);
     font-size: 2rem;
 }
 
-h5{
+h5 {
     font-size: 1.25rem;
     color: var(--bg-accent-2);
 }
 
-h6{
+h6 {
     font-family: 'Patrick Hand';
     font-size: 2.5rem;
     width: 20%;
 }
 
-.span{
+.span {
     font-size: 56px;
     line-height: 60px;
 }
 
-.blob{
+.blob {
     background-color: var(--bg-accent);
     width: 300px;
     height: 450px;
 }
 
-#aboutUs{
+#aboutUs {
     gap: 180px;
 }
 
-.about-us-img{
+.about-us-img {
     width: 250px;
     position: absolute;
     left: 90px;
     top: 109px;
 }
 
-.about-us-content{
+.about-us-content {
     width: 530px;
 }
 
-.benefit-card{
+.benefit-card {
     width: 420px;
     background-color: white;
     padding: 32px 19.2px;
     border-radius: 20px;
 }
 
-.benefit-img{
+.benefit-img {
     width: 32px;
 }
 
-#facilities{
+#facilities {
     padding-bottom: 160px;
 }
 
-.facilities-wrapper{
-    justify-content: center;
+.facilities-wrapper {
+    width: calc(100% - 300px);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: start;
 }
 
 .facilities-wrapper::-webkit-scrollbar {
@@ -132,13 +136,18 @@ h6{
 
 .facilities-wrapper::-webkit-scrollbar-thumb {
     -webkit-border-radius: 5px;
-    background-color: var(--bg-grey);
+    background-color: var(--bg-primary);
 }
 
-.facilities-img{
+.facilities-img {
     object-fit: cover;
     width: 244px;
     height: 244px;
+    transition: transform 1s;
+}
+
+.facilities-img:hover {
+    transform: rotate(20deg);
 }
 
 .cta-section::before {
@@ -157,23 +166,23 @@ h6{
     padding-bottom: 5rem;
 }
 
-.btn.cta-btn{
+.btn.cta-btn {
     background-color: var(--bg-accent-2);
 }
 
 .btn.cta-btn:hover,
-.btn.cta-btn:active{
+.btn.cta-btn:active {
     background-color: var(--bg-accent-2);
     opacity: 0.7;
 }
 
-.footer-section{
+.footer-section {
     background-color: var(--bg-accent-2);
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
 
-.footer-img{
+.footer-img {
     width: 30px;
 }
 
@@ -181,26 +190,23 @@ h6{
 /******************************    Mobile Design    *********************************/
 
 @media screen and (max-width: 1399px) {
-    h6{
+    h6 {
         width: 25%;
+    }
+
+    .facilities-wrapper {
+        width: calc(100% - 250px);
     }
 }
 
 @media screen and (max-width: 1300px) {
-    .about-us-img{
+    .about-us-img {
         top: 116px;
-    }
-
-    .facilities-wrapper {
-        width: 1000px;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        justify-content: start;
     }
 }
 
 @media screen and (max-width: 1199px) {
-    h6{
+    h6 {
         width: 29%;
     }
 
@@ -219,7 +225,7 @@ h6{
 }
 
 @media screen and (max-width: 1130px) {
-    .facilities-wrapper{
+    .facilities-wrapper {
         width: 946px;
     }
 }
@@ -229,42 +235,42 @@ h6{
         gap: 130px;
     }
 
-    .about-us-content{
+    .about-us-content {
         width: 520px;
     }
 }
 
-@media screen and (max-width: 991px){
-    .blob{
+@media screen and (max-width: 991px) {
+    .blob {
         width: 200px;
     }
 
-    body::before{
+    body::before {
         height: 80px;
     }
-    
-    .offcanvas.offcanvas-end{
+
+    .offcanvas.offcanvas-end {
         width: 40%;
     }
-    
-    h1{
+
+    h1 {
         font-size: 2.1875rem;
     }
 
-    h3{
+    h3 {
         font-size: 1.75rem;
     }
 
-    h5{
+    h5 {
         font-size: 18px;
     }
 
-    h6{
+    h6 {
         font-size: 36px;
         width: 35%;
     }
 
-    .span{
+    .span {
         font-size: 50px;
         line-height: 57px;
     }
@@ -273,27 +279,27 @@ h6{
         gap: 150px;
     }
 
-    .about-us-img{
+    .about-us-img {
         width: 200px;
         top: 132px;
         left: 40px;
     }
 
 
-    .benefit-card{
+    .benefit-card {
         width: 390px;
     }
 
-    .facilities-wrapper{
+    .facilities-wrapper {
         width: 748px;
     }
 
-    .cta-section::before{
+    .cta-section::before {
         height: 55px;
         top: -30px;
     }
 
-    .cta-section{
+    .cta-section {
         padding-top: 2rem;
         padding-bottom: 4rem;
     }
@@ -304,33 +310,33 @@ h6{
         width: 180px;
     }
 
-    #aboutUs{
+    #aboutUs {
         gap: 120px;
     }
 
-    .about-us-content{
+    .about-us-content {
         width: 500px;
     }
 }
 
 @media screen and (max-width: 870px) {
-    .benefit-card{
+    .benefit-card {
         width: 360px;
     }
 
-    #facilities{
+    #facilities {
         padding-bottom: 110px;
     }
 }
 
 @media screen and (max-width: 820px) {
+
     .benefit-wrapper1,
-    .benefit-wrapper2
-    {
+    .benefit-wrapper2 {
         flex-direction: column;
     }
 
-    .benefit-card{
+    .benefit-card {
         width: 430px;
     }
 
@@ -347,40 +353,41 @@ h6{
 }
 
 @media screen and (max-width: 767px) {
+
     section,
-    #aboutUs{
+    #aboutUs {
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
     }
 
-    .span{
+    .span {
         font-size: 45px;
         line-height: 2.7rem;
     }
 
-    .blob{
+    .blob {
         width: 250px;
     }
 
-    #aboutUs{
+    #aboutUs {
         gap: 30px;
     }
 
-    .about-us-img{
+    .about-us-img {
         width: 250px;
         position: static;
     }
 
-    .about-us-content{
+    .about-us-content {
         width: 80%;
     }
 
-    .facilities-wrapper{
+    .facilities-wrapper {
         width: calc(100vw - 30px);
         padding-bottom: 1rem;
     }
 
-    .offcanvas.offcanvas-end{
+    .offcanvas.offcanvas-end {
         width: 50%;
     }
 
@@ -393,12 +400,12 @@ h6{
         font-size: 2rem;
     }
 
-    h6{
+    h6 {
         font-size: 32px;
         width: 43%;
     }
 
-    .check-icon{
+    .check-icon {
         width: 23px;
     }
 
@@ -410,22 +417,22 @@ h6{
 }
 
 @media screen and (max-width: 623px) {
-    .about-us-content{
+    .about-us-content {
         width: 90%;
     }
 }
 
 @media screen and (max-width: 575px) {
-    h3{
+    h3 {
         font-size: 1.5rem;
     }
 
-    h6{
+    h6 {
         font-size: 1.75rem;
         width: 35%
     }
 
-    .about-us-img{
+    .about-us-img {
         width: 200px;
     }
 
@@ -439,7 +446,7 @@ h6{
 }
 
 @media screen and (max-width: 541px) {
-    h6{
+    h6 {
         text-align: center;
         width: 100%;
     }
@@ -448,18 +455,18 @@ h6{
         width: 100%;
     }
 
-    .cta-wrapper{
+    .cta-wrapper {
         flex-direction: column;
         gap: 1.25rem !important;
     }
 }
 
 @media screen and (max-width: 470px) {
-    .offcanvas.offcanvas-end{
+    .offcanvas.offcanvas-end {
         width: 80%;
     }
 
-    h1{
+    h1 {
         font-size: 28px;
     }
 
