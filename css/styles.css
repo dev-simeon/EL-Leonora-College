@@ -119,11 +119,20 @@ h6{
 }
 
 #facilities{
-    padding-bottom: 162px;
+    padding-bottom: 160px;
 }
 
 .facilities-wrapper{
     justify-content: center;
+}
+
+.facilities-wrapper::-webkit-scrollbar {
+    width: 3px;
+}
+
+.facilities-wrapper::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    background-color: var(--bg-grey);
 }
 
 .facilities-img{
@@ -175,18 +184,18 @@ h6{
     h6{
         width: 25%;
     }
+}
+
+@media screen and (max-width: 1300px) {
+    .about-us-img{
+        top: 116px;
+    }
 
     .facilities-wrapper {
         width: 1000px;
         overflow-x: scroll;
         overflow-y: hidden;
         justify-content: start;
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    .about-us-img{
-        top: 116px;
     }
 }
 
@@ -304,20 +313,13 @@ h6{
     }
 }
 
-@media screen and (max-width: 799px) {
-    .facilities-img{
-        width: 196px;
-        height: 196px;
-    }
-}
-
 @media screen and (max-width: 870px) {
     .benefit-card{
         width: 360px;
     }
 
     #facilities{
-        padding-bottom: 120px;
+        padding-bottom: 110px;
     }
 }
 
@@ -334,6 +336,13 @@ h6{
 
     .about-us-content {
         width: 470px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .facilities-img {
+        width: 196px;
+        height: 196px;
     }
 }
 
