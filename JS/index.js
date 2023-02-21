@@ -12,5 +12,4 @@ body.addEventListener("scroll",() => {
     }
 });
 
-console.log("hey");
 console.log(changeNavbarPosition)
