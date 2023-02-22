@@ -1,16 +1,15 @@
-let bodyPage = document.querySelector("body");
 let navbar = document.querySelector("nav");
 let navLinks = document.querySelectorAll(".navlink-lg")
 let backgroundImg = document.querySelector("#hero-page");
 let changeNavbarPosition = backgroundImg.offsetHeight;
 
 
-bodyPage.onscroll = () => {
+window.addEventListener("scroll",() => {
     ChangeNavbarAppearance();
-};
+});
 
 function ChangeNavbarAppearance() {
-    if (window.scrollY >= changeNavbarPosition) {
+    if (window.pageYOffset >= changeNavbarPosition) {
         navbar.classList.add("bg-white");
         navbar.classList.add("shadow-sm");
         navbar.classList.add("opacity-75");
