@@ -10,7 +10,7 @@ bodyPage.onscroll = () => {
 };
 
 function ChangeNavbarAppearance() {
-    if (window.pageYOffset >= changeNavbarPosition) {
+    if (window.scrollY >= changeNavbarPosition) {
         navbar.classList.add("bg-white");
         navbar.classList.add("shadow-sm");
         navbar.classList.add("opacity-75");
