@@ -129,6 +129,7 @@ h6 {
 .facilities-wrapper {
     width: calc(100% - 200px);
     overflow-x: scroll;
+    overflow-y: hidden;
     justify-content: start;
 }
 
