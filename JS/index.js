@@ -1,23 +1,26 @@
 let navbar = document.querySelector(".navbar");
 let navLinks = document.querySelectorAll(".navlink-lg")
-let backgroundImg = document.querySelector("#hero-page");
-let changeNavbarPosition = backgroundImg.offsetHeight;
+let heroSection = document.querySelector("#hero-page");
 
+
+window.addEventListener("load",() => {
+    ChangeNavbarAppearance();
+});
 
 window.addEventListener("scroll",() => {
     ChangeNavbarAppearance();
 });
 
 function ChangeNavbarAppearance() {
-    if (window.pageYOffset >= changeNavbarPosition) {
-        navbar.classList.add("bg-transparent");
+    if (heroSection.getBoundingClientRect().bottom <= 50) {
+        navbar.classList.add("bg-white");
         navbar.classList.add("shadow-sm");
         navLinks.forEach(element => {
             element.style.color = "#666D83";
         });
     } 
     else {
-        navbar.classList.remove("bg-trasparent");
+        navbar.classList.remove("bg-white");
         navbar.classList.remove("shadow-sm");
         navLinks.forEach(element => {
             element.style.color = "#FFFFFF";
