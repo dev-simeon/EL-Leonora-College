@@ -376,7 +376,8 @@ h6 {
 
 @media screen and (max-width: 767px) {
     section,
-    #aboutUs {
+    #aboutUs,
+    #facilities {
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
     }
@@ -388,10 +389,6 @@ h6 {
 
     #aboutUs {
         gap: 1.5rem;
-    }
-
-    .about-us-img2{
-        width: 200px;
     }
 
     .about-us-content {
