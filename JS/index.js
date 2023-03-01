@@ -2,7 +2,6 @@ let navbar = document.querySelector(".navbar");
 let navLinks = document.querySelectorAll(".navlink-lg")
 let heroSection = document.querySelector("#hero-page");
 
-
 window.addEventListener("load",() => {
     ChangeNavbarAppearance();
 });
